@@ -1,27 +1,46 @@
-# TodoApi
+# `csharp-dotnet-angular4`
+
+Requirements
+-----
+1. SQL SERVER 2017
+2. .NET Core (VS Code)
+3. Node.js version 6.11.* or higher
+
+## Running the application
+1. Download zip or git clone
+2. Import `database/schema.sql`
+  ```sh
+  $ sqlcmd -S localhost -U SA -i database/schema.sql
+  ```
+3. Install `dotnet` and `Angular-CLI`
+  ```sh
+  $ npm install -g dotnet
+  $ npm install -g @angular/cli
+  ```
+4. Install dependencies
+  ```sh
+  $ npm install
+  ```
+5. Build the Angular application
+  ```sh
+  $ ng build
+  ```
+
+6. .NET Core build then restore
+  ```sh
+  $ dotnet build
+  $ dotnet restore
+  ```
+
+7. Finally, run the server
+  ```sh
+  $ dotnet run
+  ```
+
+Magic happens at `http://localhost:5000/` <3
+
+## Angular-CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
