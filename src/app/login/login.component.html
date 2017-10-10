@@ -1,0 +1,112 @@
+<div class="top-div theme"></div>
+<div class="text-center text-uppercase margin-top">
+    <!-- <h1>Logo</h1> -->
+    
+</div>
+<div class="form-wall">
+    <div class="center sign-in-top">
+        <h4 class="text-uppercase text-white">Sign in</h4>
+    </div>
+    <form class="form-signin  materialize clearfix"
+        [formGroup]="loginform"
+        (ngSubmit)="login()">
+        <div class="col-md-12 center">
+            <div class="">
+                <img src="" class="login-logo"  alt="">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <input type="email" class="form-control" formControlName="email" name="username" placeholder=" " required>
+            <label for="username" class="md-label">Email</label>
+        </div>
+        <div class="col-md-12">
+            <input type="password" class="form-control" formControlName="password" name="password" placeholder=" " required>
+            <label for="password" class="md-label">Password</label>
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-block btn-lg btn-default theme">Sign in</button>
+        </div>
+    </form>
+    <div class="col-md-12 center top-margin-sm">
+        <button (click)="showDialog = !showDialog" class="btn">Register</button>
+        <!-- <button class="text-primary" (click)="openModal('custom-modal-1')">Register</button> -->
+    </div>
+</div>
+
+<app-dialog [(visible)]="showDialog">
+    <h2>Registration Form</h2>
+    <form novalidate
+    [formGroup]="myform"
+    (ngSubmit)="onSubmit()">
+
+        <div class="form-group"
+            [ngClass]="{
+            'has-danger': firstName.invalid && (firstName.dirty || firstName.touched),
+            'has-success': firstName.valid && (firstName.dirty || firstName.touched)
+            }">
+            <label>First Name</label>
+            <input type="text"
+                class="form-control"
+                formControlName="firstName"
+                required>
+            <div class="form-control-feedback"
+                *ngIf="firstName.errors && (firstName.dirty || firstName.touched)">
+            <p *ngIf="firstName.errors.required">Last Name is required</p>
+            </div>
+        </div>
+
+        <div class="form-group"
+            [ngClass]="{
+            'has-danger': lastName.invalid && (lastName.dirty || lastName.touched),
+            'has-success': lastName.valid && (lastName.dirty || lastName.touched)
+            }">
+            <label>Last Name</label>
+            <input type="text"
+                class="form-control"
+                formControlName="lastName"
+                required>
+            <div class="form-control-feedback"
+                *ngIf="lastName.errors && (lastName.dirty || lastName.touched)">
+            <p *ngIf="lastName.errors.required">Last Name is required</p>
+            </div>
+        </div>
+
+        <div class="form-group"
+            [ngClass]="{
+            'has-danger': email.invalid && (email.dirty || email.touched),
+            'has-success': email.valid && (email.dirty || email.touched)
+        }">
+            <label>Email</label>
+            <input type="email"
+                    class="form-control"
+                    formControlName="email"
+                    required>
+            <div class="form-control-feedback"
+                *ngIf="email.errors && (email.dirty || email.touched)">
+                <p *ngIf="email.errors.required">Email is required</p>
+                <p *ngIf="password.errors.pattern">The email address must contain at least the @ character</p>
+            </div>
+        </div>
+
+        <div class="form-group"
+            [ngClass]="{
+            'has-danger': password.invalid && (password.dirty || password.touched),
+            'has-success': password.valid && (password.dirty || password.touched)
+        }">
+            <label>Password</label>
+            <input type="password"
+                    class="form-control"
+                    formControlName="password"
+                    required>
+            <div class="form-control-feedback"
+                *ngIf="password.errors && (password.dirty || password.touched)">
+                <p *ngIf="password.errors.required">Password is required</p>
+                <p *ngIf="password.errors.minlength">Password must be 8 characters long, we need another {{password.errors.minlength.requiredLength - password.errors.minlength.actualLength}} characters </p>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <!-- <pre>{{myform.value | json}}</pre> -->
+        </form>
+</app-dialog>

@@ -1,0 +1,37 @@
+<nav class="navbar navbar-light bg-faded navbar-fixed-top">
+    <p><a class="pull-right" (click)="logout()">Logout</a></p>
+</nav>
+
+<br/><br/><br/>
+<a (click)="showDialog = !showDialog && (opt = 'Add') && model = {title: null, content: null}" class="btn btn-primary">
+    <i class="fa fa-plus-square fa-fw"></i>
+</a>
+<br/>
+<br/>
+<div class="card"  *ngFor="let value of topics">
+    <div class="card-block">
+        <h4 class="card-title">{{value.title}}</h4>
+        <p class="card-text">{{value.content}}</p>
+        <a (click)="(showDialog = !showDialog) && (opt = 'Edit') && model = value" class="btn btn-primary btn-sm"> <i class="fa fa-pencil fa-fw"></i> </a>
+        <a (click)="delete(value.id)" class="btn btn-primary btn-sm"> <i class="fa fa-trash fa-fw"></i> </a>
+    </div>
+</div>
+
+<app-dialog [(visible)]="showDialog">
+    <h2>{{opt}} Topic</h2>
+    <form name="form" (ngSubmit)="f.form.valid && ((opt === 'Add' && addTopic()) || opt === 'Edit' && edit()) && f.form.reset()" #f="ngForm" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !title.valid }">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" [(ngModel)]="model.title" #title="ngModel" required />
+            <div *ngIf="f.submitted && !title.valid" class="help-block">Title is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !content.valid }">
+            <label for="content">Content</label>
+            <textarea class="form-control" name="content" [(ngModel)]="model.content" #content="ngModel" required></textarea>
+            <div *ngIf="f.submitted && !content.valid" class="help-block">Content is required</div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</app-dialog>
