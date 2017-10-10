@@ -12587,11 +12587,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cdi/workspace/csharp/csharp-dotnet-angular4/csharp-dotnet-angular4.csproj",
+      "projectUniqueName": "/home/cdi/workspace/try/csharp-dotnet-angular4/csharp-dotnet-angular4.csproj",
       "projectName": "csharp-dotnet-angular4",
-      "projectPath": "/home/cdi/workspace/csharp/csharp-dotnet-angular4/csharp-dotnet-angular4.csproj",
+      "projectPath": "/home/cdi/workspace/try/csharp-dotnet-angular4/csharp-dotnet-angular4.csproj",
       "packagesPath": "/home/cdi/.nuget/packages/",
-      "outputPath": "/home/cdi/workspace/csharp/csharp-dotnet-angular4/obj/",
+      "outputPath": "/home/cdi/workspace/try/csharp-dotnet-angular4/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

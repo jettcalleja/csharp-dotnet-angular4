@@ -8,3 +8,13 @@
 /home/cdi/workspace/csharp/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.AssemblyInfo.cs
 /home/cdi/workspace/csharp/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.dll
 /home/cdi/workspace/csharp/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.pdb
+/home/cdi/workspace/try/csharp-dotnet-angular4/bin/Debug/netcoreapp2.0/csharp-dotnet-angular4.deps.json
+/home/cdi/workspace/try/csharp-dotnet-angular4/bin/Debug/netcoreapp2.0/csharp-dotnet-angular4.runtimeconfig.json
+/home/cdi/workspace/try/csharp-dotnet-angular4/bin/Debug/netcoreapp2.0/csharp-dotnet-angular4.runtimeconfig.dev.json
+/home/cdi/workspace/try/csharp-dotnet-angular4/bin/Debug/netcoreapp2.0/csharp-dotnet-angular4.dll
+/home/cdi/workspace/try/csharp-dotnet-angular4/bin/Debug/netcoreapp2.0/csharp-dotnet-angular4.pdb
+/home/cdi/workspace/try/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.csproj.CoreCompileInputs.cache
+/home/cdi/workspace/try/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.AssemblyInfoInputs.cache
+/home/cdi/workspace/try/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.AssemblyInfo.cs
+/home/cdi/workspace/try/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.dll
+/home/cdi/workspace/try/csharp-dotnet-angular4/obj/Debug/netcoreapp2.0/csharp-dotnet-angular4.pdb
