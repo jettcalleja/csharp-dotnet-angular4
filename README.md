@@ -12,27 +12,27 @@ Requirements
   ```sh
   $ sqlcmd -S localhost -U SA -i database/schema.sql
   ```
-3. Install `dotnet` and `Angular-CLI`
+3. install `dotnet` [dotnet core](https://www.microsoft.com/net/core)
+4. Install `Angular-CLI`
   ```sh
-  $ npm install -g dotnet
   $ npm install -g @angular/cli
   ```
-4. Install dependencies
+5. Install dependencies
   ```sh
   $ npm install
   ```
-5. Build the Angular application
+6. Build the Angular application
   ```sh
   $ ng build
   ```
 
-6. .NET Core build then restore
+7. .NET Core build then restore
   ```sh
   $ dotnet build
   $ dotnet restore
   ```
 
-7. Finally, run the server
+8. Finally, run the server
   ```sh
   $ dotnet run
   ```
