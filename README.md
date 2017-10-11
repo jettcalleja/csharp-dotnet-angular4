@@ -39,6 +39,20 @@ Requirements
 
 Magic happens at `http://localhost:5000/` <3
 
+## During Development
+You should watch for the code changes in Angular 4 so you should use
+  ```sh
+  $ ng serve --proxy-config proxy.config.json
+  ```
+
+Then open another terminal, you should also watch changes in c# code using
+  ```sh
+  $ dotnet watch run
+  ```
+
+The angular app will be served at `http://localhost:4200`
+While the c# server will be served at `http://localhost:5000/`
+
 ## Angular-CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
