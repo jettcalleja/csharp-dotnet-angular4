@@ -12,7 +12,7 @@ Requirements
   ```sh
   $ sqlcmd -S localhost -U SA -i database/schema.sql
   ```
-3. Install [dotnet core](https://www.microsoft.com/net/core)
+3. Install [.NET Core](https://www.microsoft.com/net/core)
 4. Install `Angular-CLI`
   ```sh
   $ npm install -g @angular/cli
