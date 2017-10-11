@@ -3,7 +3,7 @@
 Requirements
 -----
 1. SQL SERVER 2017
-2. .NET Core (VS Code)
+2. .NET Core 2.0 (VS Code)
 3. Node.js version 6.11.* or higher
 
 ## Running the application
